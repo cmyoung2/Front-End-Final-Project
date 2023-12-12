@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="calendar.js"></script>
+    <title>MyCalendar - Calendar</title>
+</head>
+<body>
+    <!--Nav-->
+    <header>
+        <div class="title-container">
+            <h1>MyCalendar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="myDash.html">Dashboard</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="calendar-container">
+        <div id="calendar" class="calendar"></div>
+        <div id="task-form" class="task-form">
+            <label for="task-date">Task Date:</label>
+            <input type="date" id="task-date" required>
+            <label for="task-description">Task Description:</label>
+            <textarea id="task-description" rows="4" required></textarea>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="task-list" class="task-list">
+            <h2>Tasks for the Month</h2>
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
